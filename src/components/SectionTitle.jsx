@@ -1,0 +1,2 @@
+import React from 'react';
+export function SectionTitle({eyebrow,title,accent}){return <div className="section-title reveal"><span className="eyebrow">{eyebrow}</span><h2>{title} <span className="gradient">{accent}</span></h2></div>}

@@ -1,0 +1,4 @@
+import React from 'react';
+export function Navbar({menu,setMenu,dark,setDark,links,lang,setLang,cta}){
+ return <header className="nav-shell"><nav className="navbar section-wrap"><a className="brand" href="#home"><span className="brand-mark">A<span>.</span></span><span>ALFAZ <small>HASSEN AKASH</small></span></a><div className={'nav-links '+(menu?'open':'')}>{links.map(([n,id])=><a href={'#'+id} key={id} onClick={()=>setMenu(false)}>{n}</a>)}</div><div className="nav-actions"><button className="lang-btn" onClick={()=>setLang(lang==='en'?'bn':'en')} aria-label="Change language">{lang==='en'?'বাংলা':'EN'}</button><button className="theme-btn" onClick={()=>setDark(!dark)} aria-label="Toggle theme">{dark?'☼':'☾'}</button><a className="nav-contact" href="#contact">{cta} ↗</a><button className="menu-btn" onClick={()=>setMenu(!menu)} aria-label="Toggle menu">{menu?'×':'☰'}</button></div></nav></header>
+}

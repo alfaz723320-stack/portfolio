@@ -86,7 +86,7 @@ function App(){
      <div className="hero-meta"><span>📍 {x('Dhaka, Bangladesh','ঢাকা, বাংলাদেশ')}</span><span className="meta-divider"></span><span>{x('Learning · Building · Improving','শেখা · বানানো · উন্নতি করা')}</span></div>
     </div>
     <div className="hero-visual reveal">
-     <div className="orbit orbit-one"></div><div className="orbit orbit-two"></div><div className="photo-frame"><img src="/profile.png" alt={NAME}/></div>
+     <div className="orbit orbit-one"></div><div className="orbit orbit-two"></div><div className="photo-frame"><img src={`${import.meta.env.BASE_URL}profile.png`} /> alt={NAME}/></div>
      <div className="floating-card card-top"><span className="mini-icon">✧</span><div><strong>{x('Frontend','ফ্রন্টএন্ড')}</strong><small>{x('Creative development','সৃজনশীল ডেভেলপমেন্ট')}</small></div></div>
      <div className="floating-card card-bottom"><span className="mini-icon blue">⌘</span><div><strong>{x('IT & Networking','আইটি ও নেটওয়ার্কিং')}</strong><small>{x('Problem solving','সমস্যা সমাধান')}</small></div></div>
      <div className="decor-dot dot-a"></div><div className="decor-dot dot-b"></div>
